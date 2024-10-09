@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo
+  devtools:
+    restart:
+      enabled: true
+  config:
+    location: classpath:/application.yml
+    import: file:c:/kimson/test.yml,file:c:/kimson/test2.yml,${PWD}/my.yml
+
+custom:
+  username: ${MY_NAME:kimson}
